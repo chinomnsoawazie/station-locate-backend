@@ -10,10 +10,60 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_09_182936) do
+ActiveRecord::Schema.define(version: 2020_01_09_212404) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "locations", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.string "name"
+    t.string "country"
+    t.string "state"
+    t.string "city"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_locations_on_user_id"
+  end
+
+  create_table "notes", force: :cascade do |t|
+    t.bigint "station_id", null: false
+    t.string "text"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["station_id"], name: "index_notes_on_station_id"
+  end
+
+  create_table "stations", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.integer "station_id"
+    t.string "name"
+    t.string "owner_network"
+    t.string "owner_network_web"
+    t.string "hours"
+    t.string "rates"
+    t.integer "distance"
+    t.integer "phone_no"
+    t.string "status"
+    t.string "public_or_private"
+    t.string "access"
+    t.string "accepted_payments"
+    t.integer "longitude"
+    t.integer "latitude"
+    t.string "country"
+    t.string "state"
+    t.string "city"
+    t.integer "zipcode"
+    t.string "facility_type"
+    t.integer "no_of_fast_chargers"
+    t.integer "no_of_level_2_EVSE"
+    t.integer "no_of_level_1_EVSE"
+    t.string "renewable_source"
+    t.string "geocode_accuracy"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_stations_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "first_name"
@@ -30,4 +80,7 @@ ActiveRecord::Schema.define(version: 2020_01_09_182936) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "locations", "users"
+  add_foreign_key "notes", "stations"
+  add_foreign_key "stations", "users"
 end

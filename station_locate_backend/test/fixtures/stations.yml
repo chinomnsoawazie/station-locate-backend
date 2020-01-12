@@ -1,0 +1,55 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  station_id: 1
+  name: MyString
+  owner_network: MyString
+  owner_network_web: MyString
+  hours: MyString
+  rates: MyString
+  distance: 1
+  phone_no: 1
+  status: MyString
+  public_or_private: MyString
+  access: MyString
+  accepted_payments: MyString
+  longitude: 1
+  latitude: 1
+  country: MyString
+  state: MyString
+  city: MyString
+  zipcode: 1
+  facility_type: MyString
+  no_of_fast_chargers: 1
+  no_of_level_2_EVSE: 1
+  no_of_level_1_EVSE: 1
+  renewable_source: MyString
+  geocode_accuracy: MyString
+
+two:
+  user: two
+  station_id: 1
+  name: MyString
+  owner_network: MyString
+  owner_network_web: MyString
+  hours: MyString
+  rates: MyString
+  distance: 1
+  phone_no: 1
+  status: MyString
+  public_or_private: MyString
+  access: MyString
+  accepted_payments: MyString
+  longitude: 1
+  latitude: 1
+  country: MyString
+  state: MyString
+  city: MyString
+  zipcode: 1
+  facility_type: MyString
+  no_of_fast_chargers: 1
+  no_of_level_2_EVSE: 1
+  no_of_level_1_EVSE: 1
+  renewable_source: MyString
+  geocode_accuracy: MyString

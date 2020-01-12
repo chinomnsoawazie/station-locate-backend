@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+    # before_action :authorized
     skip_before_action :authorized, only: [:create]
 
     def index
@@ -27,12 +28,17 @@ class UsersController < ApplicationController
     end
   
     def update
-      user = User.find(params[:id])
-      if user.update(user_params)
-        render json: user
-      else
-        render json: user.errors, status: :unprocessable_entity
-      end
+        if logged_in?
+            user = User.find(params[:id])
+            if user.update(user_params)
+              render json: user
+            else
+              render json: user.errors, status: :unprocessable_entity
+            end
+        else
+            render json: {error: 'Log in to modify details'}, status: :unauthorized
+        end
+
     end
   
     def destroy
@@ -42,6 +48,6 @@ class UsersController < ApplicationController
     private
    
     def user_params
-      params.require(:user).permit(:first_name, :last_name, :email, :username, :password_digest)
+      params.require(:user).permit(:id, :first_name, :last_name, :email, :username, :password)
     end
 end
