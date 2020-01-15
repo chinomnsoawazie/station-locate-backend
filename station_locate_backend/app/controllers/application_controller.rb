@@ -14,6 +14,11 @@ class ApplicationController < ActionController::API
       payload = {user_id: user_id}
       JWT.encode(payload, hmac_secret, 'HS256')
     end
+
+    def  nrel_key(user_id)
+      payload = {user_id: user_id}
+      JWT.encode(payload, api_key, 'HS256')
+    end
   
   
     def auth_header
