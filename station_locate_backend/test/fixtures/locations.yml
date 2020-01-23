@@ -2,14 +2,18 @@
 
 one:
   user: one
-  name: MyString
-  country: MyString
-  state: MyString
+  location_name: MyString
+  street_address: MyString
   city: MyString
+  state: MyString
+  zipcode: 1
+  country: MyString
 
 two:
   user: two
-  name: MyString
-  country: MyString
-  state: MyString
+  location_name: MyString
+  street_address: MyString
   city: MyString
+  state: MyString
+  zipcode: 1
+  country: MyString

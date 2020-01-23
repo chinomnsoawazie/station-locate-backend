@@ -2,7 +2,6 @@
 require "net/http"
 
 class StationsController < ApplicationController
-
     def index
         stations = Station.all
         render json: stations

@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   resources :login, only: [:create]
   resources :stations
   resources :notes
+  resources :locations
 
 end
