@@ -15,9 +15,7 @@ class LocationsController < ApplicationController
     end
 
     def destroy
-        # byebug
-        location_for_delete = Location.find_by(id: params[:id])
-        Location.destroy(location_for_delete.id)
+        Location.destroy(params[:id])
         render json: Location.all
     end
 

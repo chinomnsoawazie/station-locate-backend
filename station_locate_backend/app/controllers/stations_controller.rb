@@ -1,6 +1,3 @@
-# require 'rest-client'
-require "net/http"
-
 class StationsController < ApplicationController
     def index
         stations = Station.all
@@ -17,7 +14,6 @@ class StationsController < ApplicationController
     end
 
     def destroy
-        # byebug
         station_for_delete = Station.find_by(station_id: params[:id])
         Station.destroy(station_for_delete.id)
         render json:Station.all

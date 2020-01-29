@@ -1,13 +1,6 @@
 class NotesController < ApplicationController
 
-    def index
-        notes = Note.all.with_attached_file
-        render json: notes
-    end
-
-
     def create
-        # byebug
         note = Note.create!(note_params)
         if note.valid?
             render json: Note.all.with_attached_file
@@ -16,10 +9,13 @@ class NotesController < ApplicationController
         end
     end
 
-
+    def destroy
+        Note.destroy(params[:id])
+        render json: Note.all
+    end
 
     private
     def note_params
-        params.require(:note).permit(:station_id, :text, :file)
+        params.require(:note).permit(:id, :station_id, :text, :file)
     end
 end

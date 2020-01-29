@@ -1,10 +1,9 @@
 class UsersController < ApplicationController
-    # before_action :authorized
     skip_before_action :authorized
 
     def index
-      @user = User.all
-      render json: @users
+      user_names = User.all.map{ |user| user.username}
+      render json: user_names
     end
   
     def show
@@ -42,6 +41,6 @@ class UsersController < ApplicationController
   
     private
     def user_params
-      params.permit(:id, :first_name, :last_name, :email, :username, :country, :city, :state, :zipcode, :password, :street_address)
+      params.permit(:*, :id, :first_name, :last_name, :email, :username, :country, :city, :state, :zipcode, :password, :street_address)
     end
 end
