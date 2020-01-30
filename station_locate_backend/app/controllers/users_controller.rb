@@ -3,7 +3,11 @@ class UsersController < ApplicationController
 
     def check_username
       user_to_check = User.find_by(username: params[:username])
-      render json: user_to_check
+      if user_to_check
+        render json: 'Username not available'
+      else
+        render json: 'Username available'
+      end
     end
   
     def show
