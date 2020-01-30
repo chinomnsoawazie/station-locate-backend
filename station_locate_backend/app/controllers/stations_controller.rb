@@ -1,8 +1,10 @@
 class StationsController < ApplicationController
+    before_action :authorized, only: [:show]
     def index
         stations = Station.all
         render json: stations
     end
+
 
     def create
         station = Station.create(station_params)

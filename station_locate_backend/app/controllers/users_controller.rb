@@ -1,9 +1,9 @@
 class UsersController < ApplicationController
     skip_before_action :authorized
 
-    def index
-      user_names = User.all.map{ |user| user.username}
-      render json: user_names
+    def check_username
+      user_to_check = User.find_by(username: params[:username])
+      render json: user_to_check
     end
   
     def show
