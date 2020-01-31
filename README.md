@@ -16,6 +16,7 @@
   <img src="https://img.shields.io/badge/Ruby%20on%20Rails-6.0.2-red" style="max-width:50%;">
   <img src="https://img.shields.io/badge/Active%20model%20serializers-0.10.0-yellow" style="max-width:50%;">
   <img src="https://img.shields.io/badge/Dotenv%20Rails-2.7-orange" style="max-width:50%;">
+  <img src="https://img.shields.io/badge/Bycrypt-3.1.7-blue" style="max-width:50%;">
   <img src="https://img.shields.io/badge/JWT-1.5.4-red" style="max-width:50%;">
 
 </p>
