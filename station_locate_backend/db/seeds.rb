@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 User.destroy_all
 
-User.create(first_name: 'Chinomnso', last_name: 'Awazie', username: "awazienommy", password_digest:  BCrypt::Password.create("password"), email: 'awazienommy@gmail.com', country: 'United States', state: 'New York', city: 'New York', zipcode: 11222, street_address: '118 Kingsland Avenue')
+User.create(first_name: 'Chinomnso', last_name: 'Awazie', username: "awazienommy", password_digest:  BCrypt::Password.create("password"), email: 'awazienommy@gmail.com', country: 'United States', state: 'New York', city: 'New York', zipcode: 11222, street_address: '118 Kings Avenue')
 
 
 puts '<<<<<<<<<<<<<<<<===============>>>>>>>>>>>>>>'
