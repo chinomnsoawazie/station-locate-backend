@@ -15,7 +15,6 @@
   <img src="https://img.shields.io/badge/Active%20model%20serializers-0.10.0-yellow" style="max-width:50%;">
   <img src="https://img.shields.io/badge/Dotenv%20Rails-2.7-orange" style="max-width:50%;">
   <img src="https://img.shields.io/badge/Bycrypt-3.1.7-blue" style="max-width:50%;">
-  <img src="https://img.shields.io/badge/Status-Making%20mobile%20app%20version-brightgreen" style="max-width:50%;">
   <img src="https://img.shields.io/badge/JWT-1.5.4-red" style="max-width:50%;">
  </p>
   
@@ -208,15 +207,12 @@ To acess the frontend, go to <code>http://localhost:3001</code></p>
     <p>
  <ul>
   <li><a href="https://flatironschool.com/">The Flatiron School</a></li>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
   <li><a href="https://jwt.io/introduction/">JWT Auth</a></li>
-  <li><a href="https://reactjs.org/">React</a></li>
-    <li><a href="https://reacttraining.com/react-router/">React router</a></li>
-  <li><a href="https://www.npmjs.com/package/redux-thunk">Redux Thunk</a></li>
-  <li><a href="https://www.npmjs.com/package/axios">Axios</a></li>
-  <li><a href="https://www.npmjs.com/package/google-maps-react">Google maps react</a></li>
-    <li><a href="https://www.npmjs.com/package/react-google-maps">React Google maps</a></li>
-  <li><a href="https://www.npmjs.com/package/redux">Redux</a></li>
+  <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+    <li><a href="https://rubyonrails.org/">Rails</a></li>
+  <li><a href="https://rubygems.org/gems/dotenv-rails/versions/2.7.5">dotenv-rails</a></li>
+  <li><a href="https://rubygems.org/gems/bcrypt/versions/3.1.7">Bcrypt</a></li>
+  <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
  </ul>
 </p>
 
