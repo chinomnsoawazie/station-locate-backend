@@ -154,7 +154,7 @@
     </ul>
   </li>
   <li>In your terminal, run <code>rvm use ruby-2.7.0</code> to make sure you are using the correct Ruby version(this assumes you already had Ruby 2.7.0 installed)</li>
-  <li><Run <code>bundle install</code> to install all gems/dependancies required for FindStation</li>
+  <li>Run <code>bundle install</code> to install all gems/dependancies required for FindStation</li>
   <li>Run <code>rails db:create</code> to create a local PostgresQL database</li>
   <li>Run <code>rails db:migrate</code>to create the tables/columns required for proper FindStation functionality</li>
   <li>Create a file called .env in the backend directory (/station_locate_backend/) and add HMAC_SECRET = "<insert a secret string here>"(this is for your JWT token), NREL_API_KEY= "<insert API Token you were issued by National Renewable Energy Laboratory>", and GOOGLE_MAPS_API_KEY= "<insert API Token you were issued by Google maps API>" to the file</li>
