@@ -46,7 +46,7 @@
     <li><a href="#installation">Installation</a>
       <ul>
           <li><a href="#prerequisites">Prerequisites</a></li>
-          <li><a href="#backend">Backend installation</a></li>
+          <li><a href="#backend-installation">Backend installation</a></li>
           <li><a href="#first-start">First start</a></li>
       </ul>
     </li>   
@@ -128,14 +128,29 @@
    
    <h1 id="installation">Installation</h1>
    <h2 id="prerequisites">Prerequisites</h2>
-    <p>FindStation backend is biult with Ruby(2.7.0), Rails(^6.0.2), PostgreSQL(0.18) for PostgreSQL 12.1, Bcrypt(^3.1.7), Image processing(^1.2) from Active Storage, JWT, Active model serializer(^0.10.0), and Dotenv-rails(^2.7). 
-  
- <ul>
-    <li>Sign up with<a href="https://developer.nrel.gov/signup/"> National Renewable Energy Laboratory</a> to get an API key that will enable you fetch EV charging stations from their API</li>
+   <ul>
+   <li>Sign up with<a href="https://developer.nrel.gov/signup/"> National Renewable Energy Laboratory</a> to get an API key that will enable you fetch EV charging stations from their API</li>
      <li>Go to<a href="https://developers.google.com/maps/documentation/javascript/get-api-key"> Google maps JavaScript API key documentation page</a> to get an API key that will enable use any number of the about 14 different APIs for google maps services</li>
+  </ul>
+     <h2 id="backend-installation">Backend installlation</h2>
+
+   <p>FindStation backend is biult with Ruby(2.7.0), Rails(^6.0.2), PostgreSQL(0.18) for PostgreSQL 12.1, Bcrypt(^3.1.7), Image processing(^1.2) from Active Storage, JWT, Active model serializer(^0.10.0), and Dotenv-rails(^2.7). 
+  
+ <ul> 
   <li>Clone <a href="https://github.com/chinomnsoawazie/station-locate-backend">FindStation backend</a>
     <ul>
-      <li>Ensure you have these uncommented or added in your gemfile before running <code>bundle install</code></li>
+      <li>Ensure you have these uncommented or added in your gemfile before running <code>bundle install</code>
+      <ul>
+         <li><code>gem 'jwt'</code></li>
+         <li><code>gem 'active_model_serializers', '~> 0.10.0'</code></li>
+         <li><code>gem "dotenv-rails", "~> 2.7"</code></li>
+         <li><code>gem 'bcrypt', '~> 3.1.7'</code></li>
+         <li><code>gem 'image_processing', '~> 1.2'</code></li>
+         <li><code>gem 'pg', '>= 0.18'</code></li>
+         <li><code>gem 'rails', '~> 6.0.2'</code></li>
+         <li><code>ruby '2.7.0'</code></li>
+        </ul>
+      </li>
     </ul>
   </li>
   <li>In your terminal, run <code>rvm use ruby-2.7.0</code> to make sure you are using the correct Ruby version(this assumes you already had Ruby 2.7.0 installed)</li>
