@@ -1,11 +1,11 @@
-# station-locate-backend
-
 <p align="center">
   <a target="_blank" rel="noopener noreferrer" href="https://github.com/chinomnsoawazie/station-locate-backend">
   
  <img width="30%" src="https://github.com/chinomnsoawazie/station-locate-frontend/blob/master/station-locate-frontend/src/pictures/logo.png" style="max-width:50%;">
 </a>
 </p>
+
+<p align="center"> <img src="https://img.shields.io/badge/-Technologies%20Used-blue" style="max-width:50%;"> </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Ruby-2.7.0-red" style="max-width:50%;">
@@ -17,6 +17,9 @@
   <img src="https://img.shields.io/badge/Bycrypt-3.1.7-blue" style="max-width:50%;">
   <img src="https://img.shields.io/badge/Status-Making%20mobile%20app%20version-brightgreen" style="max-width:50%;">
   <img src="https://img.shields.io/badge/JWT-1.5.4-red" style="max-width:50%;">
+  
+   <p align="center"> <img src="https://img.shields.io/badge/-Notices-blue" style="max-width:50%;"> </p>
+
   
   <a target="blank" rel="noopener noreferrer" href="https://github.com/chinomnsoawazie/station-locate-frontend">
     <img src="https://img.shields.io/badge/Frontend%20repository-Click%20here-green" style="max-width:50%;">
