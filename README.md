@@ -27,6 +27,9 @@
    <img src="https://img.shields.io/badge/Status-Making%20mobile%20app%20version-brightgreen" style="max-width:50%;">
 </p>
 
+ <h3 align="center"> Take a spin of the FindStation app on Heroku by clicking
+ <a href="https://stationfind-app-frontend.herokuapp.com/">👉here👈</a></h3>
+
 <h1>
   <a id="table-of-contents" class="anchor" href="#contents">  </a>
   Table of Contents
