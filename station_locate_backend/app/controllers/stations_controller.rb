@@ -8,8 +8,10 @@ class StationsController < ApplicationController
 
     def create
         station = Station.create(station_params)
+        userStations = User.find(params[:user_id]).stations
+        # byebug
         if station.valid?
-            render json: Station.all
+            render json: userStations
         else 
             render json: {error: 'Station not added'}, status: :unprocessable_entity
         end
@@ -17,8 +19,10 @@ class StationsController < ApplicationController
 
     def destroy
         station_for_delete = Station.find_by(station_id: params[:id])
+        user_id = station_for_delete.user_id
         Station.destroy(station_for_delete.id)
-        render json:Station.all
+        userStations = User.find(user_id).stations
+        render json: userStations
     end
 
     private

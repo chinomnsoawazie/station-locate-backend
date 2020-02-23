@@ -7,16 +7,21 @@ class LocationsController < ApplicationController
 
     def create
         location = Location.create(location_params)
+        # byebug
+        userLocations = User.find(location_params[:user_id]).locations
         if location.valid?
-            render json: Location.all
+            render json: userLocations
         else 
             render json: {error: 'Location not created'}, status: :unprocessable_entity
         end
     end
 
     def destroy
+        location_for_delete = Location.find(params[:id])
+        user_id = location_for_delete.user_id
         Location.destroy(params[:id])
-        render json: Location.all
+        userLocations = User.find(user_id).locations
+        render json: userLocations
     end
 
     private
