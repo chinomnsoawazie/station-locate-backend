@@ -180,9 +180,9 @@ To acess the frontend, go to <code>http://localhost:3001</code></p>
  <ul>
   <li><a href="https://github.com/chinomnsoawazie/station-locate-backend/tree/master/station_locate_backend/app">App:</a> Primary location for backend API configuration
     <ul>
-      <li><a href="https://github.com/chinomnsoawazie/station-locate-backend/tree/master/station_locate_backend/app/controllers>controllers:</a> Render/RESTful/CRUD methods that carry our actoins including authorizations, checks, etc</li>
-       <li><a href="https://github.com/chinomnsoawazie/station-locate-backend/tree/master/station_locate_backend/app/serializers>serializers:</a>Filters for the backend API</li>
-        <li><a href="https://github.com/chinomnsoawazie/station-locate-backend/tree/master/station_locate_backend/app/models>models:</a>Active Record Associations/Validation methods</li>
+      <li><a href="https://github.com/chinomnsoawazie/station-locate-backend/tree/master/station_locate_backend/app/controllers">controllers:</a> Render/RESTful/CRUD methods that carry our actoins including authorizations, checks, etc</li>
+       <li><a href="https://github.com/chinomnsoawazie/station-locate-backend/tree/master/station_locate_backend/app/serializers">serializers:</a>Filters for the backend API</li>
+        <li><a href="https://github.com/chinomnsoawazie/station-locate-backend/tree/master/station_locate_backend/app/models">models:</a>Active Record Associations/Validation methods</li>
     </ul>
    
    </li>
