@@ -194,6 +194,19 @@ To acess the frontend, go to <code>http://localhost:3001</code></p>
 
 <a href="#table-of-contents"> <img src="https://img.shields.io/badge/-Back%20To%20Table%20of%20Contents-lightgrey" style="max-width:50%;"></a>
 
+ <h2 id="external-dataset">External datatset</h2>
+    <p>
+ <ul>
+  <li><a href="https://developer.nrel.gov/docs/transportation/alt-fuel-stations-v1/nearest/">National Renewable Laboratory's Nearest Stations(Alternative Fuel Stations):</a> Source of EV charging stations</li>
+   <li><a href="https://developers.google.com/maps/documentation/javascript/tutorial"> Google Maps JavaScript Api documentation:</a>  You get the map data by sending the request to <code>https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap</code></li>
+  <li><a href="https://developers.google.com/maps/documentation/geocoding/intro#GeocodingResponses"> Google Maps Geocoding information documentation:</a>  You get the geocode information by sending the request to <code>https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,
++Mountain+View,+CA&key=YOUR_API_KEY</code></li>
+  <li><a href="https://developers.google.com/maps/documentation/javascript/directions"> Google Maps Directions Service documentation:</a> Gives detailed information on how to send a directions service request</li>
+</ul>
+</p>
+
+<a href="#table-of-contents"> <img src="https://img.shields.io/badge/-Back%20To%20Table%20of%20Contents-lightgrey" style="max-width:50%;"></a>
+
 
 
  <h1 id="planned-improvements">Planned improvements</h1>
